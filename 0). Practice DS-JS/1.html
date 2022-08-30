@@ -1,0 +1,12 @@
+<script>
+    let data= [12, 25, 32, 21, 1, 5, 3, 7, 8, 19];
+    data.forEach((index, value) => {
+        console.log(`Index ${value} of value ${index}`);
+    });
+    let x = prompt("Enter index number");
+    if(x != "undefined" && x > data.length && x != "null"){
+        alert("Oops! you've entered wrong value. Please enter between 0 to 9 only");
+    }else{
+        alert(`Index ${x}: Value ${data[x]}`);
+    }
+</script>

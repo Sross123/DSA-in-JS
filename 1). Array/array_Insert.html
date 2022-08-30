@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array Insert</title>
+    <script>
+      let insertEl = () => {
+        let data = [1,2,3,5,6,7];
+        let position = document.querySelector("#position").value;
+        //   let position = 3;
+        let newEl = document.querySelector("#newEl").value;
+        //   let newEl = 25;
+        console.log("Old Array");
+        // console.log(data);
+        
+        if (position > 0 && position != "undefined" && position == "null") {
+          console.error("Oops! Index is starting from 0 and above");
+        } else{
+          for (i = data.length - 1; i >= 0; i--) {
+            if (i >= position) {
+              data[i + 1] = data[i];
+              if (i == position) {
+                data[i] = newEl;
+              }
+            }
+          }
+          console.log(data);
+        }
+      };
+    </script>
+  </head>
+  <body>
+    <input type="text" id="position" placeholder="Enter position" />
+    <input type="text" id="newEl" placeholder="Enter new element" />
+    <button onclick="insertEl()">Insert new element</button>
+  </body>
+</html>

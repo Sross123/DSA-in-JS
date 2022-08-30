@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Traversal</title>
+    <script>
+        let data = [12, 2, 3, 4, 5, 6, 7, 15, 19, 16];
+        // for(var i = 0; i<data.length; i++){
+        //     document.write(`Array of Index ${i}: Its Value is [${data[i]}]<br> `);
+        // }
+        let x = prompt("Enter index number");
+        if(x == "undefined" || x < 0){
+            alert("Please enter value from 0 to 9");
+        }else{
+            for(var i = 0; i<data.length; i++){
+                document.write(`${x} Index: ${data[x]}`);
+            }
+        }
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
