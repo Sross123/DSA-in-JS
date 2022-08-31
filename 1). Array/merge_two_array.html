@@ -1,14 +1,17 @@
 <script>
-    var arr1 = [3, 7, 12, 32, 15, 66, 35, 25];
+    var arr1 = [3, 7, 12, 32, 15];
     var arr2 = [5, 12, 31, 13, 5, 16, 22, 29, 100, 1000];
     var arr3 = [];
     // console.log(arr1)
-    for(let i = 0; i<arr1.length; i++){
-        // arr3.push(arr1[i]);
-        arr3[i] = arr1[i];
-    }
-    for(let i=0; i<arr2.length; i++){
-        arr3[arr1.length+i] = arr2[i];
-    }
-    console.log(`Final array `, arr3)
+    // for(let i = 0; i<arr1.length; i++){
+    //     // arr3.push(arr1[i]);
+    //     arr3[i] = arr1[i];
+    // }
+    // for(let i=0; i<arr2.length; i++){
+    //     arr3[arr1.length+i] = arr2[i];
+    // }
+    // console.log(`Final array `, arr3)
+
+    arr3 = [...arr1, ...arr2]
+    console.log(arr3)
 </script>
